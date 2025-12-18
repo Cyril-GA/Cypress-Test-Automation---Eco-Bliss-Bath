@@ -244,7 +244,6 @@ describe("Orders API", () => {
     const newValue = 2;
 
     before(() => {
-      // Connexion
       cy.setupCartWithProduct().then((data) => {
         authToken = data.authToken;
         orderLineId = data.orderLineId;

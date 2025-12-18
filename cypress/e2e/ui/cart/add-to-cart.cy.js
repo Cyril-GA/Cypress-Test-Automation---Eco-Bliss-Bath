@@ -38,7 +38,6 @@ describe("Add to Cart UI", () => {
     cy.visit("/products");
     cy.contains("Nos produits").should("be.visible");
 
-    // Clique sur le premier article
     cy.goToFirstProduct();
 
     // Sauvegarder l'URL du produit

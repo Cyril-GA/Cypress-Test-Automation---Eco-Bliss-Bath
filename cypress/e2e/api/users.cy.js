@@ -152,7 +152,6 @@ describe("Users API", () => {
     });
   });
 
-  // GET/me
   context("GET /me", () => {
     let authToken;
     let loginUsername;
@@ -185,7 +184,6 @@ describe("Users API", () => {
           "lastname"
         );
 
-        // Valeurs
         expect(response.body.email).to.eq(loginUsername);
       });
     });
